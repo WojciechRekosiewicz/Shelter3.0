@@ -18,11 +18,11 @@ namespace Shelter3._0.Controllers
         private readonly IUserRepository _userRepository;
        // private readonly UserManager<IdentityUser> _userManager;
 
-        public AdvertsController(IAdvertRepository advertRepository, IUserRepository userRepository )
+        public AdvertsController(IAdvertRepository advertRepository, IUserRepository userRepository)
         {
             _advertRepository = advertRepository;
             _userRepository = userRepository;
-          //  _userManager = userManager;
+         //   _userManager = userManager;
         }
 
 
