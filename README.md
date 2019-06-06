@@ -1,4 +1,4 @@
-# Shelter v.2.0
+# Shelter v.3.0
 Web Shelter Application for people who want to sell or give away unwanted animals.
 
 ## Getting Started
@@ -32,7 +32,7 @@ dotnet test
 * [Entity Framework Core](https://docs.microsoft.com/pl-pl/ef/core/) - .net object-relational mapper(ORM) 
 ## Authors
 
-* **Wojciech Rękosiewicz** - *Initial work* - [Shelter2.0](https://github.com/WojciechRekosiewicz/Shelter2.0)
+* **Wojciech Rękosiewicz** - *Initial work* - [Shelter3.0](https://github.com/WojciechRekosiewicz/Shelter3.0)
 * **Piotr Gontarski** - Collabolator
 
 ## Acknowledgments
