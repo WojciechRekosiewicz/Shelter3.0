@@ -12,8 +12,8 @@
     <div class="container">
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li>
-          <a href="/Advert/List" class="navbar-brand">Adverts</a>
+          <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{ exact: true }'>
+          <a class="navbar-brand" [routerLink]='["/api/Adverts"]'>Adverts</a>
           </li>
           <li>
           <a href="/Home/Privacy">Privacy</a>
