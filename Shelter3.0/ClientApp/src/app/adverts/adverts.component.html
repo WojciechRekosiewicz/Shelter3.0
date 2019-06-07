@@ -1,0 +1,15 @@
+<div>
+  <div class="col-sm-1 col-lg-4 col-md-4" *ngFor="let p of adverts">
+    <div class="thumbnail">
+      <img src="{{ p.imageUrl }}" class="img-thumbnail" [alt]="p.title" />
+      <ng-template [ngIf]="p.reservingId == null">
+        <span class="label label-success badge-pill">Avaiable</span>
+      </ng-template>
+      <ng-template [ngIf]="p.reservingId != null">
+        <span class="label label-danger badge-pill">Reserved</span>
+      </ng-template>
+      <h4>{{ p.title }}</h4>
+      <h5><strong>Short Description</strong>: {{ p.shortDescription }}</h5>
+    </div>
+  </div>
+</div>

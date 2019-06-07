@@ -3,10 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { Advert } from "src/app/shared/advert";
 
 @Component({
-  selector: 'app-fetch-data',
-  templateUrl: './fetch-data.component.html'
+  selector: 'app-adverts',
+  templateUrl: './adverts.component.html',
+  styleUrls: ['./adverts.component.css']
 })
-export class FetchDataComponent {
+export class AdvertsComponent {
   public adverts: Advert[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
