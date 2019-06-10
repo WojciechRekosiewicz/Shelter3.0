@@ -1,33 +1,4 @@
-<!--<h1>Weather forecast</h1>
-
-<p>This component demonstrates fetching data from the server.</p>
-
-<p *ngIf="!forecasts"><em>Loading...</em></p>
-
-<table class='table table-striped' *ngIf="forecasts">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Temp. (C)</th>
-      <th>Temp. (F)</th>
-      <th>Summary</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let forecast of forecasts">
-
-    </tr>
-  </tbody>
-</table>-->
-
-
-
-
-
-<div class="text-center">
-
-  <h4 class="display-4">List of adverts</h4>
-
+<div>
   <div class="col-sm-1 col-lg-4 col-md-4" *ngFor="let p of adverts">
     <div class="thumbnail">
       <img src="{{ p.imageUrl }}" class="img-thumbnail" [alt]="p.title" />
@@ -41,9 +12,4 @@
       <h5><strong>Short Description</strong>: {{ p.shortDescription }}</h5>
     </div>
   </div>
-
 </div>
-
-
-
-
