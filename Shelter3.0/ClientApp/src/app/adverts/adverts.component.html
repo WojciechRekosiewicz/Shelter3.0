@@ -11,12 +11,13 @@
       <h4>{{ p.title }}</h4>
       <ul>
         <li [routerLinkActive]='["link-active"]'>
-          <a [routerLink]="['advert', p.advertId]">{{ p.title }}</a>
+          <a [routerLink]="['/adverts/advert/', p.advertId]">{{ p.title }}</a>
           </li>
       </ul>
       <h5><strong>Short Description</strong>: {{ p.shortDescription }}</h5>
     </div>
   </div>
 </div>
+
 
 
