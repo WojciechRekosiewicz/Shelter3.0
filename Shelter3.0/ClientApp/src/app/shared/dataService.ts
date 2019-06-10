@@ -19,7 +19,9 @@ export class DataService {
 //  }
 //}
 
-    public adverts: Advert[] = [];
+  public adverts: Advert[] = [];
+
+  //public advert: Advert = null;
 
     loadAdverts(): Observable<boolean> {
       return this.http.get("https://localhost:44378/api/Adverts")
@@ -28,7 +30,23 @@ export class DataService {
                     this.adverts = data;
                     return true;
                 }));           
-    }
+  }
+
+  getAdvert(id: number | string) {
+    return this.loadAdverts().pipe(
+      // (+) before `id` turns the string into a number
+      map((adverts: Advert[]) => adverts.find(advert => advert.advertId === +advert.advertId))
+    );
+  }
+
+  //getAdvert(id: number) Observable<boolean> {
+  //  return this.http.get("https://localhost:44378/api/Adverts/" + id)
+  //    .pipe(
+  //      map((data: any) => {
+  //        this.advert = data;
+  //        return true;
+  //      }));
+  //}
 
 
 }
