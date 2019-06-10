@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Shelter3._0.Models;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Shelter3._0
 {
@@ -29,6 +30,10 @@ namespace Shelter3._0
             services.AddTransient<IUserRepository, UserRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddSwaggerGen(x =>
+            {
+                x.SwaggerDoc("v1", new Info { Title = "Shelter Api", Description = "Sample Description" });
+            });
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -61,6 +66,12 @@ namespace Shelter3._0
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
             });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
+               options.SwaggerEndpoint("/swagger/v1/swagger.json", "Core api")
+            );
+
 
             app.UseSpa(spa =>
             {
