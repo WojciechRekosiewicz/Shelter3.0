@@ -47,8 +47,9 @@ namespace Shelter3._0.Controllers
 
         // POST: api/Adverts
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Advert value)
         {
+
         }
 
         // PUT: api/Adverts/5
