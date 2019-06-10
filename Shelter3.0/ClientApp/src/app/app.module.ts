@@ -9,7 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { AdvertsComponent } from './adverts/adverts.component';
-import { AdvertComponent } from './adverts/advert/advert.component';
+import { AdvertComponent } from './advert/advert.component';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 
 
