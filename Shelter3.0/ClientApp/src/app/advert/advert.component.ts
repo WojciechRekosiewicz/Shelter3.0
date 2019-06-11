@@ -54,7 +54,7 @@ export class AdvertComponent implements OnInit, OnDestroy {
   //) { }
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string, private route: ActivatedRoute) {  
-    http.get<Advert>(baseUrl + 'api/Adverts/' + this.id).subscribe(result => {
+    http.get<Advert>(baseUrl + 'api/Adverts/7').subscribe(result => {
       this.advert = result;
     }, error => console.error(error));
     console.log(this.id);

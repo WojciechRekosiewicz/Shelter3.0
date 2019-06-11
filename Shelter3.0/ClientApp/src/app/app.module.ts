@@ -31,7 +31,7 @@ import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'adverts', component: AdvertsComponent },
-      { path: 'adverts/advert/:id', component: AdvertComponent },
+      { path: 'adverts/advert/7', component: AdvertComponent },
       { path: '**', component: PageNotFoundComponent }
     ])
   ],
