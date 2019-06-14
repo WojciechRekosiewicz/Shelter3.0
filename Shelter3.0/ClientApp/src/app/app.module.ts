@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { AdvertListComponent } from './adverts/advert-list.component';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 import { AdvertDetailsComponent } from './adverts/advert-details/advert-details.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -27,13 +28,7 @@ import { AdvertDetailsComponent } from './adverts/advert-details/advert-details.
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'adverts', component: AdvertListComponent },
-      { path: 'adverts/advert/:id', component: AdvertDetailsComponent },
-      { path: '**', component: PageNotFoundComponent }
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
