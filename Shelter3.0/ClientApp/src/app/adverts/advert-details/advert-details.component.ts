@@ -1,9 +1,9 @@
 import { Component, Inject, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Advert } from "src/app/shared/advert";
 import { Observable, Subscription } from 'rxjs';
 import { ParamMap, ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
+import { Advert } from '../advert';
 
 
 

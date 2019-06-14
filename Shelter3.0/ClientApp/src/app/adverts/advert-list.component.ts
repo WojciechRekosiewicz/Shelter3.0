@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Advert } from "src/app/shared/advert";
+import { Advert } from './advert';
+
 
 @Component({
   selector: 'app-adverts',

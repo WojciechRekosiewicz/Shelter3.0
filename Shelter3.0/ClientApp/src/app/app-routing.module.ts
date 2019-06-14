@@ -15,8 +15,8 @@ import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-      { path: 'adverts', component: AdvertListComponent },
-      { path: 'adverts/advert/:id', component: AdvertDetailsComponent },
+      //{ path: 'adverts', component: AdvertListComponent },
+      //{ path: 'adverts/advert/:id', component: AdvertDetailsComponent },
       { path: '**', component: PageNotFoundComponent }
     ])
   ],
