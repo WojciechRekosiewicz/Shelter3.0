@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
-import { AdvertsComponent } from './adverts/adverts.component';
-import { AdvertComponent } from './advert/advert.component';
+import { AdvertListComponent } from './adverts/advert-list.component';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
+import { AdvertDetailsComponent } from './adverts/advert-details/advert-details.component';
 
 
 @NgModule({
@@ -19,8 +19,8 @@ import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent, 
-    AdvertsComponent,
-    AdvertComponent,
+    AdvertListComponent,
+    AdvertDetailsComponent,
     PageNotFoundComponent
   ],
   imports: [
@@ -30,8 +30,8 @@ import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-      { path: 'adverts', component: AdvertsComponent },
-      { path: 'adverts/advert/7', component: AdvertComponent },
+      { path: 'adverts', component: AdvertListComponent },
+      { path: 'adverts/advert/:id', component: AdvertDetailsComponent },
       { path: '**', component: PageNotFoundComponent }
     ])
   ],

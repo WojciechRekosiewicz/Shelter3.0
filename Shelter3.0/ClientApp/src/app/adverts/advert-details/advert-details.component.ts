@@ -4,15 +4,15 @@ import { Advert } from "src/app/shared/advert";
 import { Observable, Subscription } from 'rxjs';
 import { ParamMap, ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
-import { DataService } from '../shared/dataService';
+
 
 
 @Component({
-  selector: 'app-advert',
-  templateUrl: './advert.component.html',
-  styleUrls: ['./advert.component.css']
+  selector: 'advert-details',
+  templateUrl: './advert-details.component.html',
+  styleUrls: ['./advert-details.component.css']
 })
-export class AdvertComponent implements OnInit, OnDestroy {
+export class AdvertDetailsComponent implements OnInit, OnDestroy {
 
 
   public id: number;

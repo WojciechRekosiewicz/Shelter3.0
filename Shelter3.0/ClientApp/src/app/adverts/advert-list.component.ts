@@ -4,10 +4,10 @@ import { Advert } from "src/app/shared/advert";
 
 @Component({
   selector: 'app-adverts',
-  templateUrl: './adverts.component.html',
-  styleUrls: ['./adverts.component.css']
+  templateUrl: './advert-list.component.html',
+  styleUrls: ['./advert-list.component.css']
 })
-export class AdvertsComponent {
+export class AdvertListComponent {
   public adverts: Advert[];
     router: any;
 
