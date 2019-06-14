@@ -7,7 +7,7 @@ import { Advert } from './advert';
 
 
 @Injectable()
-export class DataService {
+export class AdvertService {
 
     constructor(private http: HttpClient ) {
   }

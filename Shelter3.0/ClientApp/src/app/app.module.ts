@@ -12,23 +12,24 @@ import { AdvertListComponent } from './adverts/advert-list.component';
 import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 import { AdvertDetailsComponent } from './adverts/advert-details/advert-details.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AdvertModule } from './adverts/advert.module';
 
 
 @NgModule({
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    HttpClientModule,
+    AdvertModule,
+    FormsModule,
+    AppRoutingModule
+  ],
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent, 
-    AdvertListComponent,
-    AdvertDetailsComponent,
+    CounterComponent,
     PageNotFoundComponent
-  ],
-  imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    HttpClientModule,
-    FormsModule,
-    AppRoutingModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
