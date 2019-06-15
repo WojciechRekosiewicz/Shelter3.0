@@ -11,7 +11,7 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     RouterModule.forChild([
       { path: 'adverts', component: AdvertListComponent },
-      { path: 'adverts/advert/:id', component: AdvertDetailsComponent }
+      { path: 'adverts/:id', component: AdvertDetailsComponent }
     ])
   ],
   declarations: [

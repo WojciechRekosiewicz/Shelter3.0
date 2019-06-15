@@ -24,13 +24,13 @@ export class AdvertDetailsComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    const id = +this.route.snapshot.paramMap.get('advertId');
+    const id = +this.route.snapshot.paramMap.get('id');
     this.getAdvert(id);
   }
 
   getAdvert(id: number) {
     this.advertService.getAdvert(id).subscribe(
-      product => this.onAdvertRetrieved(product),
+      advert => this.onAdvertRetrieved(advert),
       error => this.errorMessage = <any>error);
   }
 
@@ -38,7 +38,7 @@ export class AdvertDetailsComponent implements OnInit {
     this.advert = advert;
 
     if (this.advert) {
-      this.pageTitle = `Product Detail: ${this.advert.title}`;
+      this.pageTitle = `Advert Detail: ${this.advert.title}`;
     } else {
       this.pageTitle = 'No product found';
     }

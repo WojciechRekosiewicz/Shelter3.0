@@ -43,9 +43,9 @@ export class AdvertService {
   }
 
   getAdvert(id: number): Observable<Advert> {
-    if (id === 0) {
-      return of(this.initializeProduct());
-    }
+    //if (id === 0) {
+    //  return of(this.initializeProduct());
+    //}
     const url = `${this.advertsUrl}/${id}`;
     return this.http.get<Advert>(url)
       .pipe(

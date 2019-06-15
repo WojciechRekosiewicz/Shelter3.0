@@ -12,9 +12,11 @@ import { error } from 'util';
 })
 export class AdvertListComponent implements OnInit {
 
-  public adverts: Advert[];
+
+  pageTitle = 'Advert List';
+  adverts: Advert[];
   errorMessage = '';
-    router: any;
+    //router: any;
 
   //constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
   //  http.get<Advert[]>(baseUrl + 'api/Adverts').subscribe(result => {
@@ -27,9 +29,9 @@ export class AdvertListComponent implements OnInit {
   }
 
 
-  goToAdvertDetails(id) {
-    this.router.navigate(['/adverts/advert/', id]);
-  }
+  //goToAdvertDetails(id) {
+  //  this.router.navigate(['/adverts/advert/', id]);
+  //}
 
 
   ngOnInit(): void {
